@@ -1,0 +1,235 @@
+/* Шрифти, контейнер */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14;
+    width: 1600px;
+    height: 2346px;
+    background: #FFFFFF;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: content-box;
+}
+
+body a:hover,
+body a:focus {
+    color: var(--accent-color);
+}
+
+body button:hover,
+body button:focus {
+    background-color: #000000;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: var(--accent-color);
+    color: #2196F3;
+}
+
+/* Логотип сайту в шапці */
+/* Сині букви логотипу */
+.logo {
+    font-family: 'Raleway';
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+    letter-spacing: 0.03em;
+}
+
+/* Чорні букви логотипу */
+.logo-part {
+    font-family: 'Raleway';
+    color: black;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+    letter-spacing: 0.03em;
+}
+
+.footerpart {
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1, 19;
+    letter-spacing: 0.03em;
+}
+
+/* Силки меню */
+.navigation-link {
+    color: black;
+}
+
+/* Контакти */
+.list {
+    list-style: none;
+}
+
+/* Емейл */
+.mail {
+    width: 135px;
+    height: 16px;
+    color: #2196F3;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
+}
+
+/* Телефон */
+.phone {
+    width: 122px;
+    height: 16px;
+    text-decoration: none;
+    color: #757575;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
+}
+
+/* Герой */
+.hero {
+    width: 1600px;
+    height: 600px;
+    background: #2F303A;
+}
+
+/* Заголовок героя */
+.heading {
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Кнопка героя*/
+.button {
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+/* Текст кнопки героя*/
+.text-button {
+    font-size: 16px;
+    line-height: 1, 87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+.about {
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.caption {
+    font-size: 36px;
+    line-height: 1, 16;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.team {
+    font-size: 36px;
+    line-height: 1, 16;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.team-name {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+
+.profession {
+    font-size: 16px;
+    line-height: 1, 18;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.page-footer {
+    background: #2F303A;
+}
+
+.adress {
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+.message {
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.mobile {
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1, 16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+/* Портфоліо */
+.portfolio {
+    list-style: none;
+}
+
+.button-list {
+    color: #F5F4FA;
+}
+
+body .button-list:hover,
+body .button-list:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+    color: #2196F3;
+}
+
+.work-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 1, 87;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
