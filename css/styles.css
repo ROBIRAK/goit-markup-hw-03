@@ -2,13 +2,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14;
-    width: 1600px;
-    height: 2346px;
     background: #FFFFFF;
     margin: auto;
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: content-box;
+    font-weight: 400;
 }
 
 body a:hover,
@@ -92,9 +91,9 @@ body button:focus {
 
 /* Герой */
 .hero {
-    width: 1600px;
-    height: 600px;
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /* Заголовок героя */
@@ -199,9 +198,12 @@ a {
 h2 {
     font-size: 36px;
     line-height: 1, 16;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+
+.benefits {
+    text-align: center;
 }
 
 /* Портфоліо */
