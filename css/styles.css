@@ -1,8 +1,15 @@
+:root {
+    --header-color: #ffffff;
+    --primary-text-color: #212121;
+    --second-text-color: #757575;
+    --accent-color: #2196f3;
+    --button-color: #f5f4fa;
+}
 /* Шрифти, контейнер */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14;
-    background: #FFFFFF;
+    font-size: 14px;
+    background: var (--header-color);
     margin: auto;
     padding-left: 16px;
     padding-right: 16px;
@@ -10,14 +17,63 @@ body {
     font-weight: 400;
 }
 
-body a:hover,
-body a:focus {
-    color: var(--accent-color);
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.container-header {
+    width: 1200px;
+    height: 80px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation {
+        display: flex;
+        align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.list {
+    display: flex;
 }
 
 body button:hover,
 body button:focus {
-    background-color: #000000;
+    background-color: #188ce8;
     color: var(--accent-color);
     cursor: pointer;
 }
@@ -25,14 +81,14 @@ body button:focus {
 .navigation-link:hover,
 .navigation-link:focus {
     color: var(--accent-color);
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* Логотип сайту в шапці */
 /* Сині букви логотипу */
 .logo {
     font-family: 'Raleway';
-    color: #2196F3;
+    color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1, 19;
@@ -42,7 +98,7 @@ body button:focus {
 /* Чорні букви логотипу */
 .logo-part {
     font-family: 'Raleway';
-    color: black;
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1, 19;
@@ -60,7 +116,7 @@ body button:focus {
 
 /* Силки меню */
 .navigation-link {
-    color: black;
+    color: var(--primary-text-color);
 }
 
 /* Контакти */
@@ -72,7 +128,7 @@ body button:focus {
 .mail {
     width: 135px;
     height: 16px;
-    color: #2196F3;
+    color: var(--second-text-color);
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
@@ -83,10 +139,48 @@ body button:focus {
     width: 122px;
     height: 16px;
     text-decoration: none;
-    color: #757575;
+    color: var(--second-text-color);
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
+}
+
+.mail:hover,
+.phone:hover,
+.mail:focus,
+.phone:focus {
+    color: var(--accent-color);
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+}
+
+.hero-description {
+    display: flex;
+    justify-content: center;
+    background-color: #2f303a;
+    column-gap: 30px;
+}
+
+/* --- section 2 --- */
+.section-two {
+    padding-top: 94px;
+    /* padding-bottom: 94px; */
+}
+
+.section-two-list {
+    display: flex;
+}
+
+.section-two-item {
+    width: 270px;
+    height: 101px;
+}
+
+.section-two-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* Герой */
@@ -111,8 +205,14 @@ body button:focus {
     position: absolute;
     width: 216px;
     height: 50px;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     cursor: pointer;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
 }
 
 /* Текст кнопки героя*/
@@ -127,32 +227,49 @@ ul {
     list-style: none;
 }
 
+.item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .about {
     font-size: 14px;
     line-height: 1, 71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-text-color);
 }
 
 .caption {
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
+}
+
+.job-image-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .team {
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .team-name {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 
@@ -160,7 +277,7 @@ ul {
     font-size: 16px;
     line-height: 1, 18;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-text-color);
 }
 
 .page-footer {
@@ -191,6 +308,13 @@ ul {
     font-style: normal;
 }
 
+.mobile:hover,
+.message:hover,
+.mobile:focus,
+.message:focus {
+    color: var(--accent-color);
+}
+
 a {
     text-decoration: none;
 }
@@ -199,7 +323,7 @@ h2 {
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .benefits {
@@ -212,26 +336,40 @@ h2 {
 }
 
 .button-list {
-    color: #F5F4FA;
+    display: flex;
 }
 
-body .button-list:hover,
-body .button-list:focus {
-    color: var(--accent-color);
-    cursor: pointer;
-    color: #2196F3;
+.portfoio-button {
+    color: var(--primary-text-color);
+    background-color: var(--button-color);
+    width: 112px;
+    height: 38px;
+    border: 0;
+    margin-top: 8px;
+}
+
+.portfoio-button:hover,
+.portfoio-button:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 }
 
 .work-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--primary-text-color);
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .desc {
     font-size: 16px;
     line-height: 1, 87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--second-text-color);
 }
