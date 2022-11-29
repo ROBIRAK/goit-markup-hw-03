@@ -5,17 +5,19 @@
     --accent-color: #2196f3;
     --button-color: #f5f4fa;
 }
+
 /* Шрифти, контейнер */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    background: var (--header-color);
+    background: #FFFFFF;
     margin: auto;
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: content-box;
     font-weight: 400;
 }
+
 
 p,
 h1,
@@ -24,51 +26,27 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-ul {
+/* .list {
+    list-style: none;
     margin: 0;
     padding: 0;
+} */
+
+.contakt {
+    list-style: none;
+    margin-left: auto;
 }
 
-img {
-    display: block;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.container-header {
-    width: 1200px;
-    height: 80px;
-}
-
-.page-header {
+.description-list {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.navigation {
-        display: flex;
-        align-items: center;
-}
-
-.menu {
-    display: flex;
-}
-
-.list {
-    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    gap: 30px;
 }
 
 body button:hover,
@@ -81,14 +59,14 @@ body button:focus {
 .navigation-link:hover,
 .navigation-link:focus {
     color: var(--accent-color);
-    color: var(--accent-color);
+    color: #2196F3;
 }
 
 /* Логотип сайту в шапці */
 /* Сині букви логотипу */
 .logo {
     font-family: 'Raleway';
-    color: var(--accent-color);
+    color: #2196F3;
     font-weight: 700;
     font-size: 26px;
     line-height: 1, 19;
@@ -98,7 +76,7 @@ body button:focus {
 /* Чорні букви логотипу */
 .logo-part {
     font-family: 'Raleway';
-    color: var(--primary-text-color);
+    color: #212121;
     font-weight: 700;
     font-size: 26px;
     line-height: 1, 19;
@@ -114,24 +92,64 @@ body button:focus {
     letter-spacing: 0.03em;
 }
 
-/* Силки меню */
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.menu {
+    display: flex;
+    margin-left: 93px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navigation-item {
+    margin-right: 50px;
+}
+
+.menu .navigation-item:last-child {
+    margin-right: 0;
+}
+
+.menu .navigation-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .navigation-link {
-    color: var(--primary-text-color);
+    color: #212121;
 }
 
 /* Контакти */
-.list {
-    list-style: none;
+.contakt {
+    display: flex;
+}
+
+.contakt .nav-contakt + .nav-contakt {
+    margin-left: 50px;
 }
 
 /* Емейл */
 .mail {
     width: 135px;
     height: 16px;
-    color: var(--second-text-color);
+    color: #757575;
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* Телефон */
@@ -139,80 +157,53 @@ body button:focus {
     width: 122px;
     height: 16px;
     text-decoration: none;
-    color: var(--second-text-color);
+    color: #757575;
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .mail:hover,
 .phone:hover,
 .mail:focus,
 .phone:focus {
-    color: var(--accent-color);
-}
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    display: flex;
-}
-
-.hero-description {
-    display: flex;
-    justify-content: center;
-    background-color: #2f303a;
-    column-gap: 30px;
-}
-
-/* --- section 2 --- */
-.section-two {
-    padding-top: 94px;
-    /* padding-bottom: 94px; */
-}
-
-.section-two-list {
-    display: flex;
-}
-
-.section-two-item {
-    width: 270px;
-    height: 101px;
-}
-
-.section-two-item:not(:last-child) {
-    margin-right: 30px;
+    color: #2196F3;
 }
 
 /* Герой */
 .hero {
     background: #2F303A;
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: auto;
 }
 
 /* Заголовок героя */
-.heading {
+.hero-heading {
+    margin-top: 200;
+    margin-bottom: 30px;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
+.hero-box {
+    text-align: center;
+}
+
 /* Кнопка героя*/
 .button {
-    position: absolute;
-    width: 216px;
+    min-width: 216px;
     height: 50px;
-    background-color: var(--accent-color);
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     border: 0;
-    display: block;
-    margin: 0 auto;
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
+    margin-bottom: 200px;
 }
 
 /* Текст кнопки героя*/
@@ -221,55 +212,119 @@ body button:focus {
     line-height: 1, 87;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    padding: 10px 32px;
+    text-align: center;
 }
 
 ul {
     list-style: none;
 }
 
-.item-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.container {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+
 }
 
-.about {
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding {
+    padding-top: 0;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 30px;
+}
+
+.benefits-title {
+    margin-bottom: 10px;
+}
+
+.about-company {
     font-size: 14px;
     line-height: 1, 71;
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
+    color: #757575;
+    margin-bottom: auto;
+    text-align: left;
 }
 
-.caption {
+.company-box,
+.benefits-box {
+    background-color: #FFFFFF;
+}
+
+.company-box {
+    text-align: center;
+}
+
+
+.job-desc-heading {
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: #212121;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-.job-image-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.team-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.team-box {
+    background: #F5F4FA;
+    text-align: center;
 }
 
-.team {
+.team-card-background {
+    background-color: #FFFFFF;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-card-list {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.team-heading {
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: #212121;
+    margin-bottom: 50px;
 }
 
 .team-name {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: #212121;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.profession {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
 }
 
 
@@ -277,11 +332,17 @@ ul {
     font-size: 16px;
     line-height: 1, 18;
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
+    color: #757575;
 }
 
 .page-footer {
     background: #2F303A;
+    padding: 60px 0;
+}
+
+.footer-contakt {
+    padding-left: 0;
+    margin-top: 10px;
 }
 
 .adress {
@@ -290,6 +351,11 @@ ul {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
+    margin-top: 20px;
+}
+
+.phone-message {
+    margin-bottom: 10px;
 }
 
 .message {
@@ -312,7 +378,7 @@ ul {
 .message:hover,
 .mobile:focus,
 .message:focus {
-    color: var(--accent-color);
+    color: #2196F3;
 }
 
 a {
@@ -323,11 +389,7 @@ h2 {
     font-size: 36px;
     line-height: 1, 16;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-
-.benefits {
-    text-align: center;
+    color: #212121;
 }
 
 /* Портфоліо */
@@ -335,13 +397,9 @@ h2 {
     list-style: none;
 }
 
-.button-list {
-    display: flex;
-}
-
 .portfoio-button {
-    color: var(--primary-text-color);
-    background-color: var(--button-color);
+    color: #212121;
+    background-color: #F5F4FA;
     width: 112px;
     height: 38px;
     border: 0;
@@ -351,25 +409,19 @@ h2 {
 .portfoio-button:hover,
 .portfoio-button:focus {
     color: #FFFFFF;
-    background-color: var(--accent-color);
+    background-color: #2196F3;
 }
 
 .work-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--primary-text-color);
-}
-
-.work-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    color: #212121;
 }
 
 .desc {
     font-size: 16px;
     line-height: 1, 87;
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
+    color: #757575;
 }
