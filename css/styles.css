@@ -108,6 +108,8 @@ body button:focus {
 
 .navigation-link {
     color: #212121;
+    width: 72px;
+    height: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 0,87;
@@ -127,7 +129,9 @@ body button:focus {
 .mail {
     width: 135px;
     height: 16px;
+    text-decoration: none;
     color: #757575;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1,14;
     letter-spacing: 0.02em;
