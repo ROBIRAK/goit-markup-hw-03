@@ -30,13 +30,13 @@ h6 {
 body button:hover,
 body button:focus {
     background-color: #188ce8;
-    color: var(--accent-color);
+    color: #2196f3;
     cursor: pointer;
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
-    color: var(--accent-color);
+    color: #2196f3;
     color: #2196F3;
 }
 
@@ -113,6 +113,8 @@ body button:focus {
     line-height: 0,87;
     letter-spacing: 0.02em;
 }
+
+/* Контакти в хедері */
 
 .contakt {
     display: flex;
